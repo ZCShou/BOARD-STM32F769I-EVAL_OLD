@@ -1,0 +1,72 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+
+        "**/*.o": true,
+        "**/*.su": true,
+        "**/*.cmd": true,
+        "**/*mips*": true,
+        "**/*powerpc*": true,
+        "**/*riscv*": true,
+        "Licenses": true,
+        ".stamp*": true,
+        "*.yml": true,
+        // 排除不使用的架构
+        "arch/{arc,m68k,microblaze,mips,nds32,nios2,powerpc,riscv,sandbox,sh,x86,xtensa}": true,
+        // 排除 arch/arm/ 中无关目录及文件
+        "arch/arm/mach-[^s]*": true,
+        "arch/arm/mach-s[^t]*": true,
+        "arch/arm/mach-st[^m]*": true,
+        "arch/arm/mach-stm32[$^m]*": true,
+        "arch/arm/mach-stm32/stm32[^f]*": true,
+        "arch/arm/mach-stm32/stm32f[^7]*": true,
+        "arch/arm/thumb1": true,
+        // 排除 arch/arm/cpu/* 无关目录及文件
+        "arch/arm/cpu/{arm11,arm720t,arm920t,arm946es,arm1136,arm1176,armv7,arm926ejs,armv8,pxa,sa1100}": true,
+        // 排除 arch/arm/dts/* 无关目录及文件
+        "arch/arm/dts/[^s|^M|^i|^a]*": true,
+        "arch/arm/dts/i[^n]*": true,
+        "arch/arm/dts/s[^t]*": true,
+        "arch/arm/dts/st[^m]*": true,
+        "arch/arm/dts/stm32[^f]*": true,
+        "arch/arm/dts/stm32f[^7]*": true,
+        "arch/arm/dts/stm32f7[^6|^-]*": true,
+        "arch/arm/dts/stm32f769-[^e]*": true,
+        "arch/arm/dts/a[^r]*": true,
+        "arch/arm/dts/ar[^m]*": true,
+        "arch/arm/dts/arm[^v]*": true,
+        // 排除 arch/arm/include/asm 无关目录及文件
+        "arch/arm/include/asm/{arch-[t-z]*,arch-[b-r]*,*-common,xen,mach-imx,arch-sunxi,arch-stv0991,arch-stm32h7,arch-stm32f4,arch-stih410,arch-sa1100,arch-aspeed,arch-am33xx,arch-armada8k,arch-armada100,armv8}": true,
+        // 排除 board/* 无关目录及文件
+        "board/[^s]*": true,
+        "board/s[^t]*": true,
+        "board/ste": true,
+        "board/sto*": true,
+        "board/st/st[^m]*": true,
+        "board/st/stm32[^f]*": true,
+        "board/st/stm32f[^7]*": true,
+        "board/st/stm32f7[^6]*": true,
+        // 排除 include/configs/* 无关目录及文件
+        "include/configs/[^s]*": true,
+        "include/configs/s[^t]*": true,
+        "include/configs/st[^m]*": true,
+        "include/configs/stm[^3]*": true,
+        "include/configs/stm32[^f]*": true,
+        "include/configs/stm32f[^7]*": true,
+        "include/configs/stm32f7[^6]*": true,
+        // 排除 configs/* 中无关目录及文件
+        "configs/[^s]*": true,
+        "configs/s[^t]*": true,
+        "configs/st[^m]*": true,
+        "configs/stm[^3]*": true,
+        "configs/stm32[^f]*": true,
+        "configs/stm32f[^7]*": true,
+        "configs/stm32f7[^6]*": true,
+        "configs/stm32f769-[^e]*": true,
+    },
+    "editor.insertSpaces": false
+}
