@@ -1,0 +1,2 @@
+# BOARD-STM32F769I-EVAL
+u-boot and linux port to BOARD-STM32F769I-EVAL
