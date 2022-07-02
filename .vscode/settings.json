@@ -6,9 +6,9 @@
         "**/CVS": true,
         "**/.DS_Store": true,
 
-        "**/*.o": true,
-        "**/*.su": true,
-        "**/*.cmd": true,
+        //"**/*.o": true,
+        //"**/*.su": true,
+        //"**/*.cmd": true,
         "**/*mips*": true,
         "**/*powerpc*": true,
         "**/*riscv*": true,
@@ -49,7 +49,7 @@
         "u-boot-v2021.10/board/st/st[^m]*": true,
         "u-boot-v2021.10/board/st/stm32[^f]*": true,
         "u-boot-v2021.10/board/st/stm32f[^7]*": true,
-        "u-boot-v2021.10/board/st/stm32f7[^6]*": true,
+        "u-boot-v2021.10/board/st/stm32f7[^6|^4]*": true,
         // 排除 u-boot-v2021.10/include/configs/* 无关目录及文件
         "u-boot-v2021.10/include/configs/[^s]*": true,
         "u-boot-v2021.10/include/configs/s[^t]*": true,
@@ -57,7 +57,7 @@
         "u-boot-v2021.10/include/configs/stm[^3]*": true,
         "u-boot-v2021.10/include/configs/stm32[^f]*": true,
         "u-boot-v2021.10/include/configs/stm32f[^7]*": true,
-        "u-boot-v2021.10/include/configs/stm32f7[^6]*": true,
+        "u-boot-v2021.10/include/configs/stm32f7[^6|^4]*": true,
         // 排除 u-boot-v2021.10/configs/* 中无关目录及文件
         "u-boot-v2021.10/configs/[^s]*": true,
         "u-boot-v2021.10/configs/s[^t]*": true,
@@ -65,7 +65,7 @@
         "u-boot-v2021.10/configs/stm[^3]*": true,
         "u-boot-v2021.10/configs/stm32[^f]*": true,
         "u-boot-v2021.10/configs/stm32f[^7]*": true,
-        "u-boot-v2021.10/configs/stm32f7[^6]*": true,
+        "u-boot-v2021.10/configs/stm32f7[^6|^4]*": true,
         "u-boot-v2021.10/configs/stm32f769-[^e]*": true,
     },
     "editor.insertSpaces": false
