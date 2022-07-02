@@ -92,7 +92,7 @@ config TPL_PINCTRL
 config SPL_PINCTRL_FULL
 	bool "Support full pin controllers in SPL"
 	depends on SPL_PINCTRL && SPL_OF_CONTROL
-	default n if TARGET_STM32F746_DISCO
+	default n if TARGET_STM32F746_DISCO || TARGET_STM32F769_EVAL
 	default y
 	help
 	  This option is an SPL-variant of the PINCTRL_FULL option.
