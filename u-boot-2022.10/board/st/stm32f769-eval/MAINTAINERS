@@ -1,0 +1,12 @@
+STM32F769 EVALUATION BOARD
+M:	Vikas Manocha <vikas.manocha@st.com>
+S:	Maintained
+F:	doc/board/st/
+F:	board/st/stm32f769-eval
+F:	include/configs/stm32f769-eval.h
+F:	configs/stm32f769-eval_defconfig
+F:	configs/stm32f769-eval_spl_defconfig
+F:	configs/stm32746g-eval_defconfig
+F:	configs/stm32746g-eval_spl_defconfig
+F:	configs/stm32f769-eval_defconfig
+F:	configs/stm32f769-eval_spl_defconfig

@@ -5,4 +5,9 @@ config TARGET_STM32F746_DISCO
 
 source "board/st/stm32f746-disco/Kconfig"
 
+config TARGET_STM32F769_EVAL
+	bool "STM32F769 Evaluation board"
+
+source "board/st/stm32f769-eval/Kconfig"
+
 endif

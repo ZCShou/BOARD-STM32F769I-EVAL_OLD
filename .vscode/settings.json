@@ -16,7 +16,7 @@
         ".stamp*": true,
         "*.yml": true,
         "linux-5.15.52":true,
-        "u-boot-2022.10":true,
+        // "u-boot-2022.10":true,
         // 排除不使用的架构
         "**/arch/{arc,m68k,microblaze,mips,nds32,nios2,powerpc,riscv,sandbox,sh,x86,xtensa}": true,
         // 排除 **/arch/arm/ 中无关目录及文件
@@ -37,7 +37,7 @@
         "**/arch/arm/dts/stm32[^f]*": true,
         "**/arch/arm/dts/stm32f[^7]*": true,
         "**/arch/arm/dts/stm32f7[^6|4|^-]*": true,
-        "**/arch/arm/dts/stm32f769-[^e]*": true,
+        "**/arch/arm/dts/stm32f769-[^e|d|p]*": true,
         "**/arch/arm/dts/a[^r]*": true,
         "**/arch/arm/dts/ar[^m]*": true,
         "**/arch/arm/dts/arm[^v]*": true,
