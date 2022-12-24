@@ -16,7 +16,7 @@
         ".stamp*": true,
         "*.yml": true,
         "linux-5.15.52":true,
-        "u-boot-v2021.10":true,
+        // "u-boot-v2021.10":true,
         // 排除不使用的架构
         "**/arch/{arc,m68k,microblaze,mips,nds32,nios2,powerpc,riscv,sandbox,sh,x86,xtensa}": true,
         // 排除 **/arch/arm/ 中无关目录及文件
