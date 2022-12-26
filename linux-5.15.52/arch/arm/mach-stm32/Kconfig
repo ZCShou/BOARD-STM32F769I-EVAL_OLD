@@ -21,15 +21,15 @@ if ARM_SINGLE_ARMV7M
 
 config MACH_STM32F429
 	bool "STMicroelectronics STM32F429"
-	default y
+	# default y
 
 config MACH_STM32F469
 	bool "STMicroelectronics STM32F469"
-	default y
+	# default y
 
 config MACH_STM32F746
 	bool "STMicroelectronics STM32F746"
-	default y
+	# default y
 
 config MACH_STM32F769
 	bool "STMicroelectronics STM32F769"
@@ -37,7 +37,7 @@ config MACH_STM32F769
 
 config MACH_STM32H743
 	bool "STMicroelectronics STM32H743"
-	default y
+	# default y
 
 endif # ARMv7-M
 
