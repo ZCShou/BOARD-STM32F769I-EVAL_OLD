@@ -92,14 +92,14 @@
 	status = "okay";
 };
 
-&sdio2 {
+&sdio1 {
 	status = "okay";
 	vmmc-supply = <&mmc_vcard>;
 	cd-gpios = <&gpioi 15 GPIO_ACTIVE_LOW>;
 	broken-cd;
 	pinctrl-names = "default", "opendrain";
-	pinctrl-0 = <&sdio_pins_b>;
-	pinctrl-1 = <&sdio_pins_od_b>;
+	pinctrl-0 = <&sdio_pins_a>;
+	pinctrl-1 = <&sdio_pins_od_a>;
 	bus-width = <4>;
 };
 

@@ -124,15 +124,20 @@
 &pinctrl {
 	ethernet_mii: mii@0 {
 		pins {
-			pinmux = <STM32_PINMUX('G',13, AF11)>, /* ETH_RMII_TXD0 */
-				 <STM32_PINMUX('G',14, AF11)>, /* ETH_RMII_TXD1 */
-				 <STM32_PINMUX('G',11, AF11)>, /* ETH_RMII_TX_EN */
+			pinmux = <STM32_PINMUX('G',13, AF11)>, /* ETH_MII_TXD0 */
+				 <STM32_PINMUX('G',14, AF11)>, /* ETH_MII_TXD1 */
+				 <STM32_PINMUX('C',2, AF11)>, /* ETH_MII_TXD2 */
+				 <STM32_PINMUX('E',2, AF11)>, /* ETH_MII_TXD3 */
+				 <STM32_PINMUX('G',11, AF11)>, /* ETH_MII_TX_EN */
+				 <STM32_PINMUX('C', 3, AF11)>, /* ETH_MII_TX_CLK */
 				 <STM32_PINMUX('A', 2, AF11)>, /* ETH_MDIO */
 				 <STM32_PINMUX('C', 1, AF11)>, /* ETH_MDC */
-				 <STM32_PINMUX('A', 1, AF11)>, /* ETH_RMII_REF_CLK */
-				 <STM32_PINMUX('A', 7, AF11)>, /* ETH_RMII_CRS_DV */
-				 <STM32_PINMUX('C', 4, AF11)>, /* ETH_RMII_RXD0 */
-				 <STM32_PINMUX('C', 5, AF11)>; /* ETH_RMII_RXD1 */
+				 <STM32_PINMUX('A', 1, AF11)>, /* ETH_MII_RX_CLK */
+				 <STM32_PINMUX('A', 7, AF11)>, /* ETH_MII_RX_DV */
+				 <STM32_PINMUX('C', 4, AF11)>, /* ETH_MII_RXD0 */
+				 <STM32_PINMUX('C', 5, AF11)>, /* ETH_MII_RXD1 */
+				 <STM32_PINMUX('H', 6, AF11)>, /* ETH_MII_RXD2 */
+				 <STM32_PINMUX('H', 7, AF11)>; /* ETH_MII_RXD3 */
 			slew-rate = <2>;
 		};
 	};

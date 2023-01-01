@@ -27,7 +27,7 @@
 			snps,pbl = <8>;
 			snps,mixed-burst;
 			pinctrl-0 = <&ethernet_mii>;
-			phy-mode = "rmii";
+			phy-mode = "mii";
 			phy-handle = <&phy0>;
 
 			status = "okay";
