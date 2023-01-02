@@ -106,7 +106,7 @@
 &sdio2 {
 	status = "okay";
 	vmmc-supply = <&mmc_vcard>;
-	cd-gpios = <&gpioi 10 GPIO_ACTIVE_LOW>;
+	cd-gpios = <&gpioc 13 GPIO_ACTIVE_LOW>;
 	broken-cd;
 	pinctrl-names = "default", "opendrain";
 	pinctrl-0 = <&sdio_pins_b>;
