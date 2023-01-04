@@ -57,7 +57,7 @@
 
 	memory@c0000000 {
 		device_type = "memory";
-		reg = <0xC0000000 0x1000000>;
+		reg = <0xC0000000 0x2000000>;
 	};
 
 	aliases {
@@ -126,10 +126,21 @@
 	status = "okay";
 };
 
+// &sdio1 {
+// 	status = "okay";
+// 	vmmc-supply = <&mmc_vcard>;
+// 	cd-gpios = <&gpioi 15 GPIO_ACTIVE_LOW>;
+// 	broken-cd;
+// 	pinctrl-names = "default", "opendrain";
+// 	pinctrl-0 = <&sdio_pins_a>;
+// 	pinctrl-1 = <&sdio_pins_od_a>;
+// 	bus-width = <4>;
+// };
+
 &sdio2 {
 	status = "okay";
 	vmmc-supply = <&mmc_vcard>;
-	cd-gpios = <&gpioi 15 GPIO_ACTIVE_LOW>;
+	cd-gpios = <&gpioc 13 GPIO_ACTIVE_LOW>;
 	broken-cd;
 	pinctrl-names = "default", "opendrain";
 	pinctrl-0 = <&sdio_pins_b>;
