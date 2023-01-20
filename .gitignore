@@ -1,1 +1,2 @@
-build_*
+build_stm32
+build_binutils
