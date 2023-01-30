@@ -108,3 +108,4 @@ __pycache__
 # include eclispe project file
 !.cproject
 !.project
+!.settings
