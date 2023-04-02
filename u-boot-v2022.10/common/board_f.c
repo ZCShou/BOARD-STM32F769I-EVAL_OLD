@@ -781,7 +781,9 @@ static int initf_dm(void)
 	int ret;
 
 	bootstage_start(BOOTSTAGE_ID_ACCUM_DM_F, "dm_f");
+	printf("=====================Before Relocation Start =====================\n");
 	ret = dm_init_and_scan(true);
+	printf("=====================Before Relocation End =====================\n");
 	bootstage_accum(BOOTSTAGE_ID_ACCUM_DM_F);
 	if (ret)
 		return ret;

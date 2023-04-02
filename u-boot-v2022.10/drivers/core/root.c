@@ -272,16 +272,24 @@ static int dm_scan_fdt_node(struct udevice *parent, ofnode parent_node,
 {
 	int ret = 0, err = 0;
 	ofnode node;
+	static u32 dep = 0;
 
 	if (!ofnode_valid(parent_node))
 		return 0;
+
+	dep += 4;
 
 	for (node = ofnode_first_subnode(parent_node);
 	     ofnode_valid(node);
 	     node = ofnode_next_subnode(node)) {
 		const char *node_name = ofnode_get_name(node);
 
+		for(int i = 0; i < dep - 4; i++) {
+			printf(" ");
+		}
+
 		if (!ofnode_is_enabled(node)) {
+			printf("node_name:%s - DISABLED\n", node_name);
 			pr_debug("   - ignoring disabled device\n");
 			continue;
 		}
@@ -294,6 +302,8 @@ static int dm_scan_fdt_node(struct udevice *parent, ofnode parent_node,
 
 	if (ret)
 		dm_warn("Some drivers failed to bind\n");
+	
+	dep -= 4;
 
 	return ret;
 }
@@ -367,18 +377,33 @@ static int dm_probe_devices(struct udevice *dev, bool pre_reloc_only)
 	u32 flags = dev_get_flags(dev);
 	struct udevice *child;
 	int ret;
+	static u32 dep_probe = 1;
 
 	if (pre_reloc_only)
 		mask |= DM_FLAG_PRE_RELOC;
 
+	/* dep_probe 初值为 0 时运行出错 */
+	for(int i = 0; i < dep_probe - 1; i++) {
+		printf(" ");
+	}
+
+	dep_probe += 4;
+
 	if ((flags & mask) == mask) {
+		printf("device_probe:%s - DM_FLAG_PROBE_AFTER_BIND\n", dev->name);
 		ret = device_probe(dev);
-		if (ret)
+		if (ret) {
+			dep_probe -= 4;
 			return ret;
+		}
+	} else {
+		printf("device_probe:%s - NO NEED\n", dev->name);
 	}
 
 	list_for_each_entry(child, &dev->child_head, sibling_node)
 		dm_probe_devices(child, pre_reloc_only);
+	
+	dep_probe -= 4;
 
 	return 0;
 }

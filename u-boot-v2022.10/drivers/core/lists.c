@@ -194,6 +194,7 @@ int lists_bind_fdt(struct udevice *parent, ofnode node, struct udevice **devp,
 	int compat_length, i;
 	int result = 0;
 	int ret = 0;
+	bool match = false;
 
 	if (devp)
 		*devp = NULL;
@@ -202,6 +203,7 @@ int lists_bind_fdt(struct udevice *parent, ofnode node, struct udevice **devp,
 
 	compat_list = ofnode_get_property(node, "compatible", &compat_length);
 	if (!compat_list) {
+		printf("node_name:%s - NO COMPAT\n", name);
 		if (compat_length == -FDT_ERR_NOTFOUND) {
 			log_debug("Device '%s' has no compatible string\n",
 				  name);
@@ -234,8 +236,30 @@ int lists_bind_fdt(struct udevice *parent, ofnode node, struct udevice **devp,
 			if (!ret)
 				break;
 		}
-		if (entry == driver + n_ents)
+		if (entry == driver + n_ents) {
+			if (compat == compat_list) {
+				printf("node_name:%s - NO OF_MATCH:", name);
+			}
+
+			if (i + strlen(compat) + 1 < compat_length) {
+				if (compat == compat_list) {
+					printf("\"%s\"", compat);
+				} else {
+					printf(",\"%s\"", compat);
+				}
+			} else {
+				if (compat == compat_list) {
+					printf("\"%s\"\n", compat);
+				} else {
+					printf(",\"%s\"\n", compat);
+				}
+			}
+			match = true;
 			continue;
+		}
+		if (match) {
+			printf("\n");
+		}
 
 		if (pre_reloc_only) {
 			if (!ofnode_pre_reloc(node) &&
@@ -244,6 +268,8 @@ int lists_bind_fdt(struct udevice *parent, ofnode node, struct udevice **devp,
 				return 0;
 			}
 		}
+
+		printf("node_name:%s - OK:%s\n", name, id->compatible);
 
 		if (entry->of_match)
 			log_debug("   - found match at '%s': '%s' matches '%s'\n",
@@ -256,6 +282,7 @@ int lists_bind_fdt(struct udevice *parent, ofnode node, struct udevice **devp,
 			continue;
 		}
 		if (ret) {
+			printf("node_name:%s - BIND ERROR\n", name);
 			dm_warn("Error binding driver '%s': %d\n", entry->name,
 				ret);
 			return log_msg_ret("bind", ret);
