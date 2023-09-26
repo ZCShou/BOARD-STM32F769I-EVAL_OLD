@@ -6,7 +6,7 @@
         "**/CVS": true,
         "**/.DS_Store": true,
         "u-boot-v2021.10":true,
-        "linux-5.15.52":true,
+        // "linux-5.15.52":true,
         "toolchain":true,
         // arch
         "**/mips": true,

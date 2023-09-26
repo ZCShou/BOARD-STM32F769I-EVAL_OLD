@@ -26,93 +26,219 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1675582592955</id>
-			<name></name>
-			<type>30</type>
+			<id>1695709680908</id>
+			<name>arch</name>
+			<type>9</type>
 			<matcher>
 				<id>org.eclipse.ui.ide.multiFilter</id>
-				<arguments>1.0-name-matches-true-true-arc</arguments>
+				<arguments>1.0-name-matches-true-false-arm</arguments>
 			</matcher>
 		</filter>
 		<filter>
-			<id>1675582592956</id>
-			<name></name>
-			<type>30</type>
+			<id>1695710175642</id>
+			<name>board</name>
+			<type>9</type>
 			<matcher>
 				<id>org.eclipse.ui.ide.multiFilter</id>
-				<arguments>1.0-name-matches-true-true-m68k</arguments>
+				<arguments>1.0-name-matches-true-false-st</arguments>
 			</matcher>
 		</filter>
 		<filter>
-			<id>1675582592958</id>
-			<name></name>
-			<type>30</type>
+			<id>1695710345625</id>
+			<name>cmd</name>
+			<type>10</type>
 			<matcher>
 				<id>org.eclipse.ui.ide.multiFilter</id>
-				<arguments>1.0-name-matches-true-true-microblaze</arguments>
+				<arguments>1.0-name-matches-true-false-broadcom</arguments>
 			</matcher>
 		</filter>
 		<filter>
-			<id>1675582592960</id>
-			<name></name>
-			<type>30</type>
+			<id>1695710345625</id>
+			<name>cmd</name>
+			<type>10</type>
 			<matcher>
 				<id>org.eclipse.ui.ide.multiFilter</id>
-				<arguments>1.0-name-matches-false-true-mips</arguments>
+				<arguments>1.0-name-matches-true-false-mvebu</arguments>
 			</matcher>
 		</filter>
 		<filter>
-			<id>1675582592961</id>
-			<name></name>
-			<type>30</type>
+			<id>1695710345626</id>
+			<name>cmd</name>
+			<type>10</type>
 			<matcher>
 				<id>org.eclipse.ui.ide.multiFilter</id>
-				<arguments>1.0-name-matches-true-true-nios2</arguments>
+				<arguments>1.0-name-matches-true-false-riscv</arguments>
 			</matcher>
 		</filter>
 		<filter>
-			<id>1675582592963</id>
-			<name></name>
-			<type>30</type>
+			<id>1695710345627</id>
+			<name>cmd</name>
+			<type>10</type>
 			<matcher>
 				<id>org.eclipse.ui.ide.multiFilter</id>
-				<arguments>1.0-name-matches-true-true-powerpc</arguments>
+				<arguments>1.0-name-matches-true-false-sandbox</arguments>
 			</matcher>
 		</filter>
 		<filter>
-			<id>1675582592964</id>
-			<name></name>
-			<type>30</type>
+			<id>1695710345628</id>
+			<name>cmd</name>
+			<type>10</type>
 			<matcher>
 				<id>org.eclipse.ui.ide.multiFilter</id>
-				<arguments>1.0-name-matches-true-true-riscv</arguments>
+				<arguments>1.0-name-matches-true-false-ti</arguments>
 			</matcher>
 		</filter>
 		<filter>
-			<id>1675582592966</id>
-			<name></name>
-			<type>30</type>
+			<id>1695710345650</id>
+			<name>cmd</name>
+			<type>10</type>
 			<matcher>
 				<id>org.eclipse.ui.ide.multiFilter</id>
-				<arguments>1.0-name-matches-true-true-x86</arguments>
+				<arguments>1.0-name-matches-true-false-x86</arguments>
 			</matcher>
 		</filter>
 		<filter>
-			<id>1675582592968</id>
-			<name></name>
-			<type>30</type>
+			<id>1695710430758</id>
+			<name>configs</name>
+			<type>5</type>
 			<matcher>
 				<id>org.eclipse.ui.ide.multiFilter</id>
-				<arguments>1.0-name-matches-true-true-xtensa</arguments>
+				<arguments>1.0-name-matches-true-false-stm32f769*</arguments>
 			</matcher>
 		</filter>
 		<filter>
-			<id>1675582592970</id>
-			<name></name>
-			<type>30</type>
+			<id>1695709811264</id>
+			<name>arch/arm</name>
+			<type>9</type>
 			<matcher>
 				<id>org.eclipse.ui.ide.multiFilter</id>
-				<arguments>1.0-name-matches-true-true-sh</arguments>
+				<arguments>1.0-name-matches-true-false-cpu</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1695709811264</id>
+			<name>arch/arm</name>
+			<type>9</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-true-false-dts</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1695709811265</id>
+			<name>arch/arm</name>
+			<type>9</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-true-false-include</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1695709811265</id>
+			<name>arch/arm</name>
+			<type>9</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-true-false-lib</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1695709811266</id>
+			<name>arch/arm</name>
+			<type>9</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-true-false-mach-stm32</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1695710243383</id>
+			<name>board/st</name>
+			<type>9</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-true-false-common</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1695710243390</id>
+			<name>board/st</name>
+			<type>9</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-true-false-stm32f769*</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1695710566216</id>
+			<name>include/configs</name>
+			<type>5</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-true-false-stm32f7*</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1695709856208</id>
+			<name>arch/arm/cpu</name>
+			<type>9</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-true-false-armv7*</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1695711126362</id>
+			<name>arch/arm/dts</name>
+			<type>9</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-true-false-include</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1695711126363</id>
+			<name>arch/arm/dts</name>
+			<type>5</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-true-false-stm32f76*</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1695711126364</id>
+			<name>arch/arm/dts</name>
+			<type>5</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-true-false-Makefile</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1695711126364</id>
+			<name>arch/arm/dts</name>
+			<type>5</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-true-false-armv7-m*</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1695711126365</id>
+			<name>arch/arm/dts</name>
+			<type>5</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-true-false-stm32f7-*</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1695710142033</id>
+			<name>arch/arm/mach-stm32</name>
+			<type>9</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-true-false-stm32f7</arguments>
 			</matcher>
 		</filter>
 	</filteredResources>

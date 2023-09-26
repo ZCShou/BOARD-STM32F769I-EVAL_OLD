@@ -7,3 +7,11 @@ environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.52181196
 environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.521811960/CROSS_COMPILE/value=arm-none-eabi-
 environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.521811960/append=true
 environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.521811960/appendContributed=true
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.993793869/ARCH/delimiter=\:
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.993793869/ARCH/operation=append
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.993793869/ARCH/value=arm
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.993793869/CROSS_COMPILE/delimiter=\:
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.993793869/CROSS_COMPILE/operation=append
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.993793869/CROSS_COMPILE/value=arm-none-eabi-
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.993793869/append=true
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.993793869/appendContributed=true
